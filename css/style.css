@@ -1,0 +1,575 @@
+body {
+	font-family: Raleways, sans-serif;
+	padding-left: 2.5%;
+	padding-right: 2.5%;
+	
+	box-sizing: border-box;
+	max-width: 1400px;
+	margin:auto;
+}
+
+input::placeholder {
+	color: black;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+/*liste pour les filtres de recherche dans le header*/
+ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+li {
+	display: inline-block;
+	margin: 10px;
+	font-size: 20px;
+	align-items: center;
+	border: 2px solid #d9d9d9;
+	border-radius: 40px;
+	cursor: pointer;
+	padding-right: 18px;
+	font-weight: bold;
+}
+
+li:hover {
+	background-color: #DEEBFF;
+}
+
+.container-filtre {
+	display: flex;
+	margin: 10px 0 20px 0;
+}
+
+.element-filtre p {
+	padding-top: 10px;
+	font-size: 18px;
+}
+
+.element-filtre {
+	display: inline-block;
+	font-weight: bold;
+	border: 0px solid cornsilk;
+	border-radius: 0px;
+}
+
+:root {
+	--blue: #0065fc;
+	--blue: #dee8ff;
+	--grey: #F2F2F2;
+}
+
+#main-top {
+	margin-top: 55px;
+}
+
+.logo {
+	margin-top: 40px;
+	background: white;
+	opacity: 1;
+	height:25px;
+}
+
+.logo img {
+	padding-left: 150px;
+}
+
+nav {
+	height: 74px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav-element:hover {
+	border-top: #0065fc 3px solid;
+	color: #0065FC;
+}
+
+#container-nav {
+	display: flex;
+	width: 30%;
+}
+
+.nav-element {
+	display: flex;
+	width: 50%;
+	align-items: end;
+	justify-content: center;
+	padding: 70px 25px 25px 25px;
+}
+
+#container-nav a {
+	font-size: 16px;
+}
+
+/*top header lien à droite*/
+.link-1 {
+	margin-top: 46px;
+}
+
+.link-1:hover {
+	color: #0065fc;
+	transform: scale(1.02);
+	cursor: pointer;
+}
+
+.link-2 {
+	margin-top: 46px;
+}
+
+.link-2:hover {
+	transform: scale(1.02);
+	box-shadow: 0 0 8px var(--blue);
+	cursor: pointer;
+}
+
+h1 {
+	font-size: 19px;
+}
+
+#main-top h2 {
+	margin-top: 100px;
+	margin-bottom: 10px;
+	font-size: 22px;
+}
+
+#main-top p {
+	margin-top: 0px;
+	margin-bottom: 40px;
+}
+
+p {
+	font-size: 16px;
+}
+
+/*touche pour ecrire la ville de recherche*/
+#research-input {
+	border: none;
+	width: 200px;
+	font-size: 18px;
+	font-weight: bold;
+	border: 2px solid #F2F2F2;
+	padding: 10px;
+}
+
+
+#research {
+	display: flex;
+	height: 50px;
+}
+
+/*touche rechercher dans le header*/
+#button-research {
+	background-color: #0065fc;
+	color: #FFFFFF;
+	font-size: 18px;
+	font-weight: bold;
+	border-top-right-radius: 16px;
+	border-bottom-right-radius: 16px;
+	border: none;
+	padding: 10px;
+}
+
+#button-research:hover {
+	transform: scale(1.02);
+	box-shadow: 0 0 8px var(--blue);
+	cursor: pointer;
+}
+
+/*touche de localisation dans le header*/
+#icon6 {
+	color: #0065fc;
+	width: 50px;
+	display: inline;
+	align-items: center;
+	justify-content: center;
+	border-radius: 16px 0 0 16px;
+	background-color: #faf3f3;
+}
+
+/*logo icones des filtres de recherche header et icône de localisation*/
+.filters-section {
+	display: flex;
+	margin: 20px 0px 40px 0px;
+}
+
+
+
+.filters-section h3 {
+	margin: 15px 30px 0px 0px;
+}
+
+.filters-section .filters-icon {
+	display: flex;
+}
+
+.filters-section .filters {
+	display: flex;
+	align-items: center;
+	height: 50px;
+	padding-right: 15px;
+	border: #dfdede 2px solid;
+	border-radius: 30px;
+	margin-right: 20px;
+	cursor: pointer;
+	transition: 0.8s;
+}
+
+.filters-section .filters:hover {
+	transform: scale(1.05);
+	background-color: #DEEBFF;
+}
+
+.filters-section .icon {
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #0065fc;
+	margin-left: 4px;
+	margin-right: 4px;
+}
+
+.filters-section p {
+	font-weight: 600;
+	display: flex;
+	align-items: center;
+	margin-right: 4px;
+}
+
+.filters-section p:hover {
+	color: #0065fc;
+}
+
+
+/*icone info dans le header*/
+.element5 {
+	color: #0065fc;
+	border-radius: 100px;
+	border: solid 1px lightgray;
+	margin-right: 8px;
+	padding: 7px 16px 7px 13px;
+	font-size: 12px;
+	width: 0px;
+	display: inline-block;
+}
+
+.info .texte{
+	display: inline-block;
+}
+
+.info p {
+	display: initial;
+}
+
+.search-filters div:hover {
+	background-color: #0065fc;
+	cursor: pointer;
+	display: flex;
+}
+
+.fa-search {
+	visibility: hidden;
+	color: #0065fc;
+}
+
+.fa-map-marker-alt {
+	color: black;
+	margin-left: 22px;
+	margin-top: 15px;
+}
+
+/*titre hebergements à Marseille*/
+.h3 {
+	font-size: 22px;
+}
+
+.fa-chart-line {
+	color: #0065fc;
+
+}
+
+.all-articles {
+	display: flex;
+	gap: 20px;
+}
+
+.all-articles>div {
+	border-radius: 16px;
+	background-color: #F2F2F2;
+}
+
+.all-articles h3 {
+	padding-left: 20px;
+	font-size: 22px;
+}
+
+.all-articles .hebergements {
+	padding: 0 25px;
+}
+
+.all-articles .populaires {
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-bottom: 4%;
+
+}
+
+.star-blue {
+	color: #0065fc;
+}
+
+.star-grey {
+	color: grey;
+	opacity: 0.7;
+}
+
+.hebergements {
+	width: 65%;
+}
+
+
+.hebergements h3 {
+	margin-top: 40px;
+	margin-bottom: 30px;
+}
+
+.hebergements a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.card-hebergement {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	justify-content: space-around;
+	margin-left: 4px;
+	margin-right: 4px;
+	width: 100%;
+}
+
+.card {
+	background-color: white;
+	border-radius: 16px 16px 16px 16px;
+	padding: 5px;
+	box-shadow: 0 0 8px gray;
+	flex-grow: 1;
+	margin: 0 10px 10px 10px;
+	transition: all 0.2s;
+	width: 28%;
+}
+
+.card img {
+	border-radius: 16px 16px 0 0;
+	height: 120px;
+	width: 100%;
+	object-fit: cover;
+}
+
+.card p,
+.card h4 {
+	margin: 5px
+}
+
+h4 {
+	font-size: 16px;
+}
+
+.card:hover {
+	transform: scale(1.02);
+	box-shadow: 0 0 8px blue;
+	cursor: pointer;
+}
+
+.card.stars {
+	margin-top: auto;
+	color: #0065fc;
+}
+
+#acacher {
+	font-size: 18px;
+}
+
+/*populaires*/
+.populaires {
+	display: flex;
+	flex-direction: column;
+	background-color: #F2F2F2;
+	width: 35%;
+}
+
+.populaires-titre{
+	display: flex;
+}
+
+.populaires-titre h3{
+	width:75%;
+	padding-right: 20px;
+	padding-bottom: 5%;
+	padding-top: 5%;
+}
+
+.populaires-titre i {
+	padding-top: 11%;
+	font-size: 22px;
+	text-align: right;
+	color: rgb(0, 101, 252);
+}
+
+.popular-list {
+	display: flex;
+	flex-direction: column;
+}
+
+.card-popular {
+	display: flex;
+	background-color: white;
+	padding: 5px;
+	border-radius: 15px;
+	height: 135px;
+	margin: 0px 30px 20px 25px;
+	box-shadow: 0 0 8px var(--dark-grey);
+	transition: all 0.2s;
+	gap: 12px;
+
+}
+
+.card-popular:hover {
+	transform: scale(1.02);
+	box-shadow: 0 0 8px var(--blue);
+	cursor: pointer;
+}
+
+.card-popular img {
+	object-fit: cover;
+	border-radius: 16px 0 0 16px;
+	height: 134px;
+	width: 120px;
+}
+
+.card-description {
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	width: 200px;
+
+}
+
+.card-description p,
+.card-description h4 {
+	margin: 3px;
+}
+
+.card-description .stars-margin-top {
+	margin-top: auto;
+}
+
+.h4 {
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 26px;
+	color: #000000;
+}
+
+/*activites*/
+#act {
+	font-size: 22px;
+	padding-top: 45px;
+}
+
+.container-act {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.activites-list {
+	display: flex;
+	background-color: white;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+.card-activites {
+	margin-top: auto;
+	width: 22%;
+	border-radius: 20px;
+	box-shadow: 4px 4px 4px white;
+	transition: all 0.2s;
+	border: 4px solid var(--grey);
+}
+
+.card-activites-img,
+.card-activite-title {
+	display: flex;
+	width: 100%;
+	border-radius: 20px;
+}
+
+.card-activites-title {
+	padding: 0 20px;
+	font-size: 14px;
+	height: 58px;
+}
+
+.card-activites img {
+	width: 100%;
+	object-fit: cover;
+	height: 445px;
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+}
+
+.card-activites:hover {
+	transform: scale(1.02);
+	box-shadow: 0px 0px 40px lightgrey;
+	cursor: pointer;
+}
+
+/*footer*/
+.footer {
+	height: 300px;
+	margin-top: 80px;
+	background-color: #F2F2F2;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: nowrap;
+	padding-left: 40px;
+}
+
+.footer-part {
+	width: 30%;
+	font-weight: normal;
+}
+
+.footer h4 {
+	font-weight: bold;
+	width: 230px;
+	font-size: 18px;
+}
+
+.footer li {
+	display: block;
+	padding-top: 3px;
+	font-weight: 100;
+	font-size: 16px;
+	border: 0;
+}
+
+.footer li:hover {
+	background-color: #f2f2f2;
+}
+
+
+

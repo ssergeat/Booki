@@ -1,0 +1,57 @@
+/**tablette max 992px**/
+@media screen and (max-width: 992px) {
+	.all-articles{
+		flex-direction: column;
+	}
+	.hebergements{
+		width: calc(100% - 50px);
+	}
+	
+	.populaires{
+		width: calc(100% - 25px);
+	}
+	#acacher{
+		margin-bottom: 50px;
+	}
+	
+	
+	.populaires-titre h3{
+		padding: 10px 25px;
+	}
+	.populaires-titre i{
+		width:25%;
+		padding-top: 35px;
+		padding-right: 25px;
+	}
+	
+	.popular-list{
+		display: flex;
+        flex-direction: row;
+	}
+	
+	.card-popular{
+		width: 29%;
+		margin: 0 10px
+	}
+	
+	.card-popular img{
+		width: 85px;
+	}
+	
+	.card-description h4{
+		font-size: 14px;
+	}
+	
+	.card-description p{
+		font-size: 13px;
+	}
+	
+	.star-blue{
+		width:12px;
+		height: 12px;
+	}
+	
+	.card-activites img{
+		height: 200px;
+	}
+}
